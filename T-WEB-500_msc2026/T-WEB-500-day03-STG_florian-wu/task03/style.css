@@ -1,0 +1,67 @@
+
+    body{
+        display : flex;
+        flex-direction: column;
+        gap:10px;
+    }
+
+    header{
+        background: rgb(76, 76, 222);
+        height: 100px;
+        width: 100%;
+    }
+        
+    .green_rect{
+        background: green;
+        height: 200px;
+    }
+
+    .orange_rect{
+        background: orange;
+        height: 200px;
+        margin-top:10px;
+    }
+
+    .purple_rect{
+        background: purple;
+    }
+
+    .pink_rect{
+        background: pink;
+    }
+
+    footer{
+        background: red;
+        height: 100px;
+    }
+
+
+@media (min-width: 768px) and (max-width: 1024px)  {
+
+    header{
+        width: 50%;
+    }
+    
+    .section2 {
+        display :flex;
+        flex-wrap:wrap;
+        justify-content: space-between;
+        gap:10px;
+    }
+
+    .orange_rect{
+        width: 49%;
+    }
+
+    .purple_rect{
+        height: 200px;
+        width : 49%;
+    }
+
+    footer{
+        background: red;
+        height: calc(10vh - 10px);
+        margin-top: 5px;
+    }
+
+}
