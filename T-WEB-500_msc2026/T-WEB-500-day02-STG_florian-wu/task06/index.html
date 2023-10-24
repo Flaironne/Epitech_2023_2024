@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CodingPedia</title>
+    </head>
+    <body>
+        <header class="box">
+            <h1>Welcome to CodingPedia</h1>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Index</a></li>
+                    <li><a href="php.html">PHP</a></li>
+                    <li><a href="sql.html">SQL</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="box">
+            <p>
+                CodingPedia is a collective encyclopedia project on the Internet aiming to be universal
+                and multi - lingual which functions as a wiki .<br>
+                CodingPedia has for goal to offer freely reusable objective and verifiable content that
+                anyone can modify and improve .<br>
+            </p>
+            <article>
+                <h3>My form</h3>
+                <form method="get">
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" required><br>
+
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" required><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br>
+
+                    <label for="age">Age:</label><br>
+                    <input type="number" id="age" name="age" min="3" max="3"><br>
+
+                    <label for="phone">Phone:</label><br>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}"><br>
+
+                    <label for="sex">Sex:</label><br>
+                    <input type="radio" name="sex" id="sex" checked>Male
+                    <input type="radio" name="sex" >Female <br>
+
+                    <label for="hair_color">Hair color:</label><br>
+                    <input type="color" id="hair_color" name="hair_color"><br>
+
+                    <label for="Date">Date:</label><br>
+                    <input type="date" id="Date" name="Date" required > <br> 
+
+                    <label for="technology">Technology:</label><br>
+                    <select id="technology" name="technology">
+                        <option value="Python">Python</option>
+                        <option value="C">C</option>
+                        <option value="Bash">Bash</option>
+                        <option value="Java">Java</option>
+                    </select> <br>
+
+                    <label for="question">Question:</label><br>
+                    <textarea id="question" name="question" rows="4" cols="50" required></textarea><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+                <script>
+                    const currentDate = new Date().toISOString().split('T')[0];
+                    document.getElementById('Date').value = currentDate;
+                </script>
+
+                
+            </article>
+        </main>
+        <aside class="box"> 
+            <p>Hello I'm Florian an apprentice software engineer who loves to dance</p>
+        </aside>
+        <footer class="box">
+            <address>
+                'name'<br>
+                'first name'<br>
+                'address'<br>
+                'tel'<br>
+            </address>
+        </footer>
+    </body>
+    
+</html>

@@ -1,0 +1,41 @@
+body {
+    background-color: grey; /* Background color for the body*/
+}
+
+.box {
+    border: 2px solid black; /* Border color for boxes*/
+    margin: 10px; /*external margin*/
+    padding-left: 10px; /*external left margin*/
+    padding-right: 10px; /*external right margin*/
+    background-color: white; /*Background for boxes*/
+}
+
+.container {
+    display: flex;
+}
+
+main {
+    flex: 80%; /* Allow main to grow and take available space */
+    background-color: white; /* Background color for main */
+    padding: 20px; /* Add padding to main */
+}
+
+aside {
+    flex: 20%;
+    width: 200px; /* Fixed width for aside */
+    background-color: white; /* Background color for aside */
+    padding: 20px; /* Add padding to aside */
+    margin-left: 20px; /* Add margin to separate main and aside */
+}
+
+.header-grid {
+    display: grid;
+    grid-template-columns: 5fr 1fr; /* 5-to-1 ratio between title and navigation */
+    align-items: center; /* Center vertically */
+}
+
+.title {
+    padding: 10px; /* Add padding for spacing within the title */
+    font-size: 24px; /* Adjust the title font size */
+}
+
