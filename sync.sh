@@ -28,7 +28,7 @@ do
   else
     fday="$i"
   fi
-  repo_name="T-${type}-${code}-day${fday}-STG_alexis-henry"
+  repo_name="T-${type}-${code}-day${fday}-STG_florian-wu"
   # Check if the repository already exists
   if [ -d "${repo_name}" ]; then
     echo "${repo_name} already exists..."
